@@ -1,7 +1,9 @@
 
 # guake-cl
 
-Based off of [varemenos's guake-color-palettes](https://github.com/varemenos/guake-color-palettes).
+Based on [varemenos's guake-color-palettes](https://github.com/varemenos/guake-color-palettes).
+
+<img src="guake-cl.gif"> </img>
 
 # License
 
