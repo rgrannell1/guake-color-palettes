@@ -12,8 +12,14 @@ const setScheme = require('../app/set-scheme')
 
 
 
-const schemeOptions = Object.keys(constants.options).join('|')
+const schemeOptions =
+	Object.keys(constants.options)
+	.join('|')
 
+const optionDocs    =
+	Object.keys(constants.options)
+	.map(option => `	${option}`)
+	.join('\n')
 
 
 const docs = `
@@ -26,6 +32,7 @@ Usage:
 
 Options:
 	-h, --help    Display this documentation.
+${optionDocs}
 `
 
 const docopt = require('docopt').docopt

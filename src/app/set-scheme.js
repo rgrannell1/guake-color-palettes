@@ -22,6 +22,7 @@ var setScheme = args => {
 			const schemePath = path.join(constants.paths.palettes, fpath)
 
 			exec(schemePath)
+			process.exit(0)
 
 		}
 
