@@ -1,5 +1,5 @@
 
-# guake-cl
+# guake-cl v0.1.0
 
 Based on [varemenos's guake-color-palettes](https://github.com/varemenos/guake-color-palettes).
 
