@@ -22,6 +22,9 @@ const optionDocs    =
 	.join('\n')
 
 
+
+
+
 const docs = `
 Name:
 	guake-cl - Command line binding for changing Guake's colour scheme.
