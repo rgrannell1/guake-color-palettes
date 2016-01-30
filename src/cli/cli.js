@@ -5,8 +5,14 @@
 
 
 
+const constants = require('../commons/constants')
 const setScheme = require('../app/set-scheme')
 
+
+
+
+
+const schemeOptions = Object.keys(constants.options).join('|')
 
 
 
@@ -15,6 +21,7 @@ Name:
 	guake-cl - Command line binding for changing Guake's colour scheme.
 
 Usage:
+	guake-cl (${schemeOptions})
 	guake-cl (-h | --help | --version)
 
 Options:
@@ -29,4 +36,4 @@ require('babel-polyfill')
 
 
 
-docopt(docs)
+setScheme(docopt(docs))
