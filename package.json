@@ -1,0 +1,30 @@
+{
+  "name": "guake-color-palettes",
+  "version": "0.1.0",
+  "description": "command-line wrapper for varamenous's guake colour pallete generator.",
+  "preferGlobal": true,
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "contributors": [{
+    "name":  "Ryan Grannell",
+    "email": "r.grannell@gmail.com"
+  }],
+  "main": "cli.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rgrannell1/guake-color-palettes.git"
+  },
+  "bin": {
+    "guake-cl": "src/cli.js"
+  },
+  "author": "Ryan Grannell",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rgrannell1/guake-color-palettes/issues"
+  },
+  "homepage": "https://github.com/rgrannell1/guake-color-palettes#readme"
+}
