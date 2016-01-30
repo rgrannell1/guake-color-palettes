@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/rgrannell1/guake-color-palettes#readme",
   "dependencies": {
-    "babel-eslint": "^5.0.0-beta6",
+    "babel-eslint": "^5.0.0-beta8",
     "babel-polyfill": "^6.3.14",
     "docopt": "^0.6.2",
     "eslint": "^1.10.3"

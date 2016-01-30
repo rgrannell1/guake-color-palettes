@@ -12,7 +12,7 @@ var path = require('path')
 
 var constants = {
 	paths: {
-		palettes: path.resolve('palettes/')
+		palettes: path.resolve(path.join(__dirname, '../..', 'palettes/'))
 	}
 }
 
