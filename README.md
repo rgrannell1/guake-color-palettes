@@ -9,7 +9,14 @@ Use 'View Image' to investigate each colour scheme.
 
 <img src="images/assembled.png"> </img>
 
-# License
+### Usage
+
+```
+guake-cl --toy-chest
+guake-cl --help
+```
+
+### License
 
 The MIT License
 
