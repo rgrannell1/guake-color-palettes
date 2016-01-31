@@ -1,2 +1,2 @@
 
-montage $(find images -name \*.png -print) -mode concatenate -background '#FFFFFF' out.png
+montage $(find images -name guake-*.png -print | sort) -mode concatenate -background '#FFFFFF' images/assembled.png
