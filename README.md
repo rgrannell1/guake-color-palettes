@@ -3,7 +3,9 @@
 
 Based on [varemenos's guake-color-palettes](https://github.com/varemenos/guake-color-palettes).
 
-<img src="guake-cl.gif"> </img>
+<img src="images/guake-cl.gif"> </img>
+
+<img src="images/assembled.png"> </img>
 
 # License
 

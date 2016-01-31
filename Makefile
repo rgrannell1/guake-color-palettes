@@ -21,3 +21,9 @@ docker-run:
 
 eslint:
 	$(ESLINT) $(ESLINT_FLAGS) ./src
+
+screenshot-images:
+	bash capture-screenshots.sh
+
+assemble-images:
+	bash assemble-images.sh
