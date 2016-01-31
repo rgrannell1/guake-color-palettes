@@ -1,4 +1,15 @@
 
+function example {
+
+	echo '{"name":"guake-color-palettes","version":"0.1.0","description":"command-line wrapper for varamenous guake colour pallete generator.","preferGlobal":true,"engines":{"node":">=4.0.0"},"contributors":[{"name":"Ryan Grannell","email":"r.grannell@gmail.com"}],"main":"cli.js","scripts":{"postinstall":""},"repository":{"type":"git","url":"git+https://github.com/rgrannell1/guake-color-palettes.git"},"bin":{"guake-cl":"src/cli/cli.js"},"author":"Ryan Grannell","license":"MIT","bugs":{"url":"https://github.com/rgrannell1/guake-color-palettes/issues"},"homepage":"https://github.com/rgrannell1/guake-color-palettes#readme","dependencies":{"babel-eslint":"^5.0.0-beta8","babel-polyfill":"^6.3.14","docopt":"^0.6.2","eslint":"^1.10.3"}}' | jq .
+
+}
+
+
+
+
+
+
 for file in $( ls palettes )
 do
 
@@ -13,8 +24,8 @@ do
 	clear
 	echo "$option"
 	printf "\n\n"
-	echo " Lorem ipsum dolor sit amet, urna est congue non sed aenean in, orci sapien id lectus pede elit, sit nec nibh lacinia justo pede, lacus quam semper interdum neque lobortis nibh, erat duis dolore est. Pellentesque sed et velit in. In nunc hac tortor, praesent fusce amet dui, tincidunt pellentesque quam nonummy penatibus, nibh dictum lorem eros, turpis eu purus. Laoreet tortor nunc. Parturient ut, nec aliquam egestas conubia taciti hendrerit, eget pulvinar pede, officiis morbi eget facilisis. Phasellus lacus fermentum posuere felis, hendrerit quis nec. Auctor praesent wisi natoque amet, fringilla vestibulum interdum odio porro facilisi, lorem est pretium pede suspendisse arcu. Ac hendrerit eum nulla. Elit dolor orci, commodo massa eleifend eget lectus. Sit massa ut. Ultricies etiam, tellus lacus, orci mattis enim magna in. Mattis purus maecenas orci aliquet, vivamus pellentesque, vestibulum gravida libero sed leo pede, pulvinar at sed dignissim ultricies facilisis, auctor tempor metus eu pharetra nulla."
 
+	example
 
 	sleep 1.5
 	gnome-screenshot --file=images/$outpath
