@@ -5,6 +5,8 @@ Based on [varemenos's guake-color-palettes](https://github.com/varemenos/guake-c
 
 <img src="images/guake-cl.gif"> </img>
 
+Use 'View Image' to investigate each colour scheme.
+
 <img src="images/assembled.png"> </img>
 
 # License
