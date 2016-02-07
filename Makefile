@@ -10,6 +10,10 @@ ESLINT_FLAGS   = --config config/eslint.json
 
 
 
+install:
+	sudo cp guake-cl /etc/bash_completion.d/guake-cl
+	npm link && npm install --global
+
 docker-build:
 	$(DOCKER) build --tag=$(CONTAINER_NAME) .
 
