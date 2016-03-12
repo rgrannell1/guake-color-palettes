@@ -32,11 +32,11 @@
 
   "devDependencies": {
     "babel-eslint": "^5.0.0-beta8",
-    "babel-polyfill": "^6.3.14",
     "eslint": "^1.10.3"
   },
 
   "dependencies": {
+    "babel-polyfill": "^6.3.14",
     "docopt": "^0.6.2"
   }
 }
