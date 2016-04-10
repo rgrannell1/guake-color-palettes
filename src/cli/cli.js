@@ -31,10 +31,13 @@ Name:
 
 Usage:
 	guake-cl (${schemeOptions})
+	guake-cl (-r | --random)
 	guake-cl (-h | --help | --version)
 
 Options:
-	-h, --help    Display this documentation.
+	-h, --help      Display this documentation.
+	-r, --random    Choose a random colour scheme.
+	--version       Display the package version.
 ${optionDocs}
 `
 

@@ -1,6 +1,6 @@
 {
   "name": "guake-color-palettes",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "command-line wrapper for varamenous's guake colour pallete generator.",
   "preferGlobal": true,
   "engines": {

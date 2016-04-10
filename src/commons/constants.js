@@ -3,20 +3,21 @@
 
 
 
-var fs   = require('fs')
-var path = require('path')
+const fs   = require('fs')
+const path = require('path')
 
 
 
 
 
-var constants = {
+const constants = {
 	paths: {
 		palettes: path.resolve(path.join(__dirname, '../..', 'palettes/'))
 	},
 	options: {
 
-	}
+	},
+	package: require('../../package')
 }
 
 

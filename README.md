@@ -29,6 +29,13 @@ the `toy-chest` theme you would use the command.
 guake-cl --toy-chest
 ```
 
+### Changelog
+
+#### v0.2.0
+
+- Added a functioning version flag.
+- Added `--random` flag to select a random colour-scheme.
+
 ### License
 
 The MIT License

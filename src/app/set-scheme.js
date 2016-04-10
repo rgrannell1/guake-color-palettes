@@ -4,15 +4,30 @@
 
 
 
-var exec      = require('child_process').exec
-var constants = require('../commons/constants')
-var path      = require('path')
+const exec      = require('child_process').exec
+const constants = require('../commons/constants')
+const path      = require('path')
 
 
 
 
 
-var setScheme = args => {
+const setScheme = args => {
+
+	if (args['--version']) {
+
+		console.log(constants.package.version)
+		process.exit(0)
+
+	}
+
+	if (args['--random']) {
+
+		const availableSchemes = Object.keys(constants.options)
+		const chosenScheme     = availableSchemes[Math.floor(Math.random( ) * availableSchemes.length)]
+		args[chosenScheme]     = true
+
+	}
 
 	Object.keys(args).forEach(option => {
 
