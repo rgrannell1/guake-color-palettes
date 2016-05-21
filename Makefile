@@ -10,9 +10,12 @@ ESLINT_FLAGS   = --config config/eslint.json
 
 
 
-install:
+install: snap
 	sudo cp guake-cl /etc/bash_completion.d/guake-cl
-	npm link && npm install --global
+	cd snapcraft && snap install guake-cl* && cd ..
+
+snap:
+	cd snapcraft && snapcraft clean && snapcraft snap && cd ..
 
 docker-build:
 	$(DOCKER) build --tag=$(CONTAINER_NAME) .
