@@ -23,7 +23,26 @@ const setScheme = args => {
 
 	if (args['--random']) {
 
-		const availableSchemes = Object.keys(constants.options)
+		const availableSchemes = Object.keys(constants.options).filter(option => {
+
+			const optionName = option.replace('--', '')
+
+			if (args['-l'] || args['--light']) {
+
+				return constants.lightSchemes.indexOf(optionName) !== -1
+
+			} else if (args['-d'] || args['--dark']) {
+
+				return constants.lightSchemes.indexOf(optionName) === -1
+
+			} else {
+
+				return true
+
+			}
+
+		})
+
 		const chosenScheme     = availableSchemes[Math.floor(Math.random( ) * availableSchemes.length)]
 		args[chosenScheme]     = true
 

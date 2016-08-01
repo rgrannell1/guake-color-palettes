@@ -1,6 +1,6 @@
 {
-  "name": "guake-color-palettes",
-  "version": "0.2.0",
+  "name": "guake-cl",
+  "version": "0.3.0",
   "description": "command-line wrapper for varamenous's guake colour pallete generator.",
   "preferGlobal": true,
   "engines": {
@@ -13,9 +13,6 @@
     }
   ],
   "main": "cli.js",
-  "scripts": {
-    "postinstall": ""
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rgrannell1/guake-color-palettes.git"

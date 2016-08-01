@@ -17,6 +17,20 @@ const constants = {
 	options: {
 
 	},
+	lightSchemes: [
+		'3024-day',
+		'belafonte-day',
+		'clrs',
+		'github',
+		'man-page',
+		'novel',
+		'pencil-light',
+		'solarized-light',
+		'spring',
+		'tango',
+		'terminal-basic',
+		'tomorrow'
+	],
 	package: require('../../package')
 }
 

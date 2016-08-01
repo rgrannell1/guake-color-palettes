@@ -29,14 +29,25 @@ const docs = `
 Name:
 	guake-cl - Command line binding for changing Guake's colour scheme.
 
+Version:
+	v${constants.package.version}
+
+Description:
+	guake-cl is a tool for choosing a guake colour-scheme.
+
+	schemes can be picked by name, or picked at random from light or dark
+	colour schemes.
+
 Usage:
 	guake-cl (${schemeOptions})
-	guake-cl (-r | --random)
+	guake-cl (-r | --random) [(-l | --light) | (-d | --dark)]
 	guake-cl (-h | --help | --version)
 
 Options:
 	-h, --help      Display this documentation.
 	-r, --random    Choose a random colour scheme.
+	-l, --light     Display a light colour scheme.
+	-d, --dark      Display a dark colour scheme.
 	--version       Display the package version.
 ${optionDocs}
 `

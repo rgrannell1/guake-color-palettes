@@ -31,6 +31,10 @@ guake-cl --toy-chest
 
 ### Changelog
 
+#### v0.3.0
+
+- Added support for choosing random light / dark colour schemes.
+
 #### v0.2.0
 
 - Added a functioning version flag.
