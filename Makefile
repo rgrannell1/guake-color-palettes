@@ -11,8 +11,8 @@ ESLINT_FLAGS   = --config config/eslint.json
 
 
 install: snap
-	sudo cp guake-cl /etc/bash_completion.d/guake-cl
 	cd snapcraft && snap install guake-cl* && cd ..
+#	sudo cp guake-cl /etc/bash_completion.d/guake-cl
 
 snap:
 	cd snapcraft && snapcraft clean && snapcraft snap && cd ..

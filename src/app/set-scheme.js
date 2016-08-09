@@ -7,6 +7,7 @@
 const exec      = require('child_process').exec
 const constants = require('../commons/constants')
 const path      = require('path')
+const fs        = require('fs')
 
 
 
@@ -55,8 +56,18 @@ const setScheme = args => {
 			const fpath      = constants.options[option].fileName
 			const schemePath = path.join(constants.paths.palettes, fpath)
 
-			exec(schemePath)
-			process.exit(0)
+			if (args['--set']) {
+
+				exec(schemePath)
+				process.exit(0)
+
+			} else {
+
+				fs.readFile(schemePath, (err, content) => {
+					console.log(content.toString( ))
+				})
+
+			}
 
 		}
 

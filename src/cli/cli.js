@@ -39,8 +39,8 @@ Description:
 	colour schemes.
 
 Usage:
-	guake-cl (${schemeOptions})
-	guake-cl (-r | --random) [(-l | --light) | (-d | --dark)]
+	guake-cl [-s | --set] (${schemeOptions})
+	guake-cl [-s | --set] (-r | --random) [(-l | --light) | (-d | --dark)]
 	guake-cl (-h | --help | --version)
 
 Options:
@@ -48,6 +48,8 @@ Options:
 	-r, --random    Choose a random colour scheme.
 	-l, --light     Display a light colour scheme.
 	-d, --dark      Display a dark colour scheme.
+	-s, --set       Set the chosen scheme as the current colour-scheme. Otherwise just
+	                  print the required code to the console.
 	--version       Display the package version.
 ${optionDocs}
 `

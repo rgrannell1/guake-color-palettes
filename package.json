@@ -7,10 +7,7 @@
     "node": ">=4.0.0"
   },
   "contributors": [
-    {
-      "name": "Ryan Grannell",
-      "email": "r.grannell@gmail.com"
-    }
+    "Ryan Grannell <r.grannell@gmail.com>"
   ],
   "main": "cli.js",
   "repository": {
@@ -26,14 +23,15 @@
     "url": "https://github.com/rgrannell1/guake-color-palettes/issues"
   },
   "homepage": "https://github.com/rgrannell1/guake-color-palettes#readme",
-
   "devDependencies": {
     "babel-eslint": "^5.0.0-beta8",
     "eslint": "^1.10.3"
   },
-
   "dependencies": {
     "babel-polyfill": "^6.3.14",
     "docopt": "^0.6.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }

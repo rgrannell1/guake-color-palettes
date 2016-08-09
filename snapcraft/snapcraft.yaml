@@ -6,9 +6,12 @@ description: change guake's colour scheme
 apps:
   guake-cl:
     command: bin/guake-cl
+    plugs: [gsettings]
 
 parts:
   guake-cl:
     plugin: nodejs
     node-packages:
       - rgrannell1/guake-cl
+
+confinement: strict
