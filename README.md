@@ -31,6 +31,10 @@ guake-cl --toy-chest
 
 ### Changelog
 
+#### v0.4.0
+
+- To support snap integration, now defaults to printing but not setting commands to change colour-scheme.
+
 #### v0.3.0
 
 - Added support for choosing random light / dark colour schemes.
