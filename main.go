@@ -183,9 +183,9 @@ func main() {
     guake-cl --solarized-dark
     > apply the theme 'solarized-dark' to your guake terminal
 
-  guake-cl list-themes --dark | fzf --preview 'guake-cl --{}'
-  > interactively choose a colour-scheme (requires fzf to be installed and on PATH). Please, install fzf and try this! If you like it,
-    alias it in your .bashrc or .zshrc as alias guake-cl-fzf="guake-cl list-themes --dark | fzf --preview 'guake-cl --{}'"
+    guake-cl list-themes --dark | fzf --preview 'guake-cl --{}'
+    > interactively choose a colour-scheme (requires fzf to be installed and on PATH). Please, install fzf and try this! If you like it,
+      alias it in your .bashrc or .zshrc as alias guake-cl-fzf="guake-cl list-themes --dark | fzf --preview 'guake-cl --{}'"
 
     guake-cl -r
     > select and applies a random theme
@@ -196,17 +196,17 @@ func main() {
     guake-cl -rd
     > select and applies a random dark scheme
 
-  guake-cl list-themes --light
-  > list all light guake-cl themes
+    guake-cl list-themes --light
+    > list all light guake-cl themes
 
-  guake-cl list-themes --dark
-  > list all dark guake-cl themes
+    guake-cl list-themes --dark
+    > list all dark guake-cl themes
 
-  guake-cl list-themes
-  > list all guake-cl themes
+    guake-cl list-themes
+    > list all guake-cl themes
 
-  See Also:
-	  guake, which has a --change-palette option which is similar
+    See Also:
+      guake, which has a --change-palette option which is similar
   `
 
 	opts, err := docopt.ParseDoc(usage)

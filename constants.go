@@ -42,7 +42,6 @@ var AllThemes = map[string]bool{
 	"elic":                           true,
 	"elio":                           true,
 	"espresso":                       true,
-	"libre":                          true,
 	"espresso-libre":                 true,
 	"fideloper":                      true,
 	"fishtank":                       true,
@@ -83,7 +82,7 @@ var AllThemes = map[string]bool{
 	"liquid-carbon":                  true,
 	"lucario":                        true,
 	"man-page":                       true,
-	"marmaterial":                    true,
+	"mar":                            true,
 	"mathias":                        true,
 	"medallion":                      true,
 	"misterioso":                     true,
@@ -263,12 +262,12 @@ var DarkThemes = map[string]bool{
 	"kibble":                      true,
 	"later-this-evening":          true,
 	"lavandula":                   true,
-	"libre":                       true,
+	"espresso-libre":              true,
 	"linux-console":               true,
 	"liquid-carbon":               true,
 	"liquid-carbon-transparent":   true,
 	"lucario":                     true,
-	"mar,lightmaterial":           true,
+	"mar":                         true,
 	"mathias":                     true,
 	"medallion":                   true,
 	"misterioso":                  true,
@@ -538,5 +537,5 @@ var Palettes = map[string]string{
 }
 
 const DEFAULT_THEME = "solarized-dark"
-const APP_VERSION = "v0.1"
+const APP_VERSION = "v0.5.0"
 const DCONF_PALETTE_KEY = "/apps/guake/style/font/palette"

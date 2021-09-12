@@ -9,9 +9,7 @@ This tool:
 
 - has 169 colour schemes to choose from
 - allows you to choose light, dark modes
-- allows interactive selection from a menu
 - allows random-selection
-- keeps track of previous themes, and supports favourites
 
 <img src="images/assembled.png"> </img>
 
@@ -21,6 +19,7 @@ Use:
 
 ```
 guake-cl --help
+guake-cl list-themes
 ```
 
 To list all available colour schemes. Each scheme is bound to an option, so for example to enable
@@ -30,11 +29,20 @@ the `toy-chest` theme you would use the command.
 guake-cl --toy-chest
 ```
 
+For full documentation, read
+
+```
+guake-cl --help
+```
+
 ### Changelog
 
 #### v0.5.0
 
-- Oh yes
+- Complete re-implementation in Golang
+- Now correctly configures recent versions of guake (by updating dconf settings)
+- Added additional colour schemes
+- Improved snapcraft integration; no workaround (like v0.4.0) should be needed
 
 #### v0.4.0
 
