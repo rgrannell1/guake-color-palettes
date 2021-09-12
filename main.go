@@ -27,8 +27,6 @@ func UpdateSetting(name *string) {
 		fmt.Printf("guake-cl: failed to update colour-theme via dconf: %v\n", setErr)
 		os.Exit(1)
 	}
-
-	fmt.Println("todo " + *name)
 }
 
 type ThemeFilter int
