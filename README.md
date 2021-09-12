@@ -1,16 +1,17 @@
 
 # guake-cl
 
-Guake-cl is a command-line tool that lets you easily change your guake colour scheme. The schemes are taken from [varemenos's guake-color-palettes](https://github.com/varemenos/guake-color-palettes).
+Guake-cl is a command-line tool that lets you easily change your guake colour scheme.
 
 <img src="images/guake-cl.gif"> </img>
 
 This tool:
 
-- has tab-completion for each colour scheme.
-- has 132 colour schemes to choose from.
-
-Use 'View Image' to investigate each colour scheme, or browse through the contents of `images/`.
+- has 169 colour schemes to choose from
+- allows you to choose light, dark modes
+- allows interactive selection from a menu
+- allows random-selection
+- keeps track of previous themes, and supports favourites
 
 <img src="images/assembled.png"> </img>
 
