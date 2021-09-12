@@ -1,3 +1,4 @@
 node_modules
 snapcraft/*
 !snapcraft.yaml
+settings.json
