@@ -102,7 +102,7 @@ func SetTheme(opts *docopt.Opts) {
 	}
 }
 
-func ListThemes(opts *docopt.Opts) {
+func ListThemes(opts *docopt.Opts) []string {
 	var palette map[string]bool
 
 	useLight, _ := opts.Bool("--light") // am I the only one that will use this flag?
@@ -135,9 +135,7 @@ func ListThemes(opts *docopt.Opts) {
 
 	sort.Strings(themes)
 
-	for _, theme := range themes {
-		fmt.Println(theme)
-	}
+	return themes
 }
 
 func CheckDconf() {
@@ -158,19 +156,20 @@ func main() {
 
 	usage += `    guake-cl [-r|--random] [(-l|--light)|(-d|--dark)]
     guake-cl (--default)
-		guake-cl list-themes [(-l|--light)|(-d|--dark)]
-		guake-cl fzf
+    guake-cl list-themes [(-l|--light)|(-d|--dark)]
     guake-cl (-h|--help|--version)
 
   Description:
     guake-cl is a command-line tool for update guake's theme. They can be picked by name, or at random
       from light / dark schemes.
 
-		guake-cl updates the dconf setting '/apps/guake/style/font/palette'. You can update the guake-theme from any
-		terminal, it doesn't need to be run from guake.
+  guake-cl updates the dconf setting '/apps/guake/style/font/palette'. You can update the guake-theme from any
+  terminal, it doesn't need to be run from guake.
+
+  themes can be previewed interactively using an fzf alias mentioned in examples.
 
   Options:
-	  --default   Restore to default theme for guake
+    --default   Restore to default theme for guake
     -r, --random    Choose a random theme; can be constrained by --light, --dark
     -l, --light     Select a light colour scheme when used with --random
     -d, --dark      Select a dark colour scheme when used with --random
@@ -184,6 +183,10 @@ func main() {
     guake-cl --solarized-dark
     > apply the theme 'solarized-dark' to your guake terminal
 
+  guake-cl list-themes --dark | fzf --preview 'guake-cl --{}'
+  > interactively choose a colour-scheme (requires fzf to be installed and on PATH). Please, install fzf and try this! If you like it,
+    alias it in your .bashrc or .zshrc as alias guake-cl-fzf="guake-cl list-themes --dark | fzf --preview 'guake-cl --{}'"
+
     guake-cl -r
     > select and applies a random theme
 
@@ -193,21 +196,18 @@ func main() {
     guake-cl -rd
     > select and applies a random dark scheme
 
-		guake-cl list-themes --light
-		> list all light guake-cl themes
+  guake-cl list-themes --light
+  > list all light guake-cl themes
 
-		guake-cl list-themes --dark
-		> list all dark guake-cl themes
+  guake-cl list-themes --dark
+  > list all dark guake-cl themes
 
-		guake-cl list-themes
-		> list all guake-cl themes
+  guake-cl list-themes
+  > list all guake-cl themes
 
-		guake-cl fzf
-		> interactively choose a colour-scheme (requires fzf to be installed and on PATH)
-
-	See Also:
+  See Also:
 	  guake, which has a --change-palette option which is similar
-		`
+  `
 
 	opts, err := docopt.ParseDoc(usage)
 
@@ -226,7 +226,13 @@ func main() {
 	listThemes, _ := opts.Bool("list-themes")
 
 	if listThemes {
-		ListThemes(&opts)
+		themes := ListThemes(&opts)
+
+		for _, theme := range themes {
+			fmt.Println(theme)
+		}
+
+		return
 	}
 
 	CheckDconf()

@@ -1,5 +1,5 @@
 node_modules
-snapcraft/*
 !snapcraft.yaml
 settings.json
 guake-cl
+*.snap
